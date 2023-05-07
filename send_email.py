@@ -1,4 +1,4 @@
-import smtplib,ssl
+import smtplib, ssl
 
 
 def gmailer(message):
@@ -12,5 +12,3 @@ def gmailer(message):
         server.login(username, password)
         server.sendmail(username, receiver, message)
 
-
-gmailer()
